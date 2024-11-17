@@ -19,7 +19,7 @@ services:
       - MYSQL_HOST=db
       - MYSQL_DATABASE=nextcloud
       - MYSQL_USER=nextcloud
-      - MYSQL_PASSWORD=
+      - MYSQL_PASSWORD=TwojeMocneHaslo
     depends_on:
       - db
       - redis
@@ -43,8 +43,8 @@ services:
     environment:
       - MYSQL_DATABASE=nextcloud
       - MYSQL_USER=nextcloud
-      - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD}
-      - MYSQL_PASSWORD=${MYSQL_PASSWORD}
+      - MYSQL_ROOT_PASSWORD=TwojeMocneHaslo
+      - MYSQL_PASSWORD=TwojeMocneHaslo
       - TZ=Europe/Warsaw
 
   phpmyadmin:
